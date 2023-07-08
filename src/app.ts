@@ -6,7 +6,7 @@ import createServer from "./utils/server";
 
 const port = config.get<number>("port");
 
-const app = createServer();
+ const app = createServer();
 
 app.listen(port, async () => {
   logger.info(`App is running at http://localhost:${port}`);
